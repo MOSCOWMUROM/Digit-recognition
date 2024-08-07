@@ -7,10 +7,10 @@ training_data.close()
 epochs = 3
 
 inputs_number = 784
-neurons_number = 530  # можно "поиграться" с этим значением
+neurons_number = 530 
 outputs_number = 10
 
-learning_rate = 0.15  # скорость обучения,  можно "поиграться" с этим значением
+learning_rate = 0.15 
 
 fst_layer_weights = np.random.normal(0.0, pow(inputs_number, -0.5), (neurons_number, inputs_number))
 snd_layer_weights = np.random.normal(0.0, pow(neurons_number, -0.5), (outputs_number, neurons_number))
